@@ -83,8 +83,10 @@ separately arranged NVIDIA hardware; simulations never stand in for hardware evi
 
 ## GitHub connection
 
-Local bootstrap initializes `main` without making commits or configuring a remote.
-When publication is desired, first choose an owner/repository and public/private visibility,
-review the files to be committed, then explicitly authorize the commit, remote creation or
-connection, and push. An existing remote should be inspected before connecting histories.
+Public repository: [CharlotteYW/ai-infra-lab](https://github.com/CharlotteYW/ai-infra-lab).
+Local `main` tracks `origin/main`; the SSH remote is
+`git@github.com:CharlotteYW/ai-infra-lab.git`. Initial publication was explicitly authorized
+by the learner on 2026-11-01. Repository content and commit messages are English.
+
+Follow the authorization rules in [AGENTS.md](AGENTS.md) for future external actions.
 No GitHub account, agent plugin, or hosted service is needed to continue learning locally.

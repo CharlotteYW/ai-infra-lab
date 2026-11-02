@@ -50,11 +50,12 @@ Wait for the learner's answer and adapt the lesson to observed gaps.
 
 ## Version control
 
-The learner authorized committing and pushing the existing repository changes. Initial
-commit `db99735` contains the bootstrap on `main`. Push is pending a GitHub destination
-and visibility decision; no remote is configured. This publication dependency does not
-block local learning. The learner confirmed that repository content and commit messages
-must remain English; conversation may be Chinese or English.
+The learner authorized committing existing changes and creating the public repository
+[CharlotteYW/ai-infra-lab](https://github.com/CharlotteYW/ai-infra-lab). Initial commit
+`db99735` contains the bootstrap; `93592c8` records publication authorization and the
+English language confirmation. Both were pushed successfully. Local `main` tracks
+`origin/main`; the configured remote is `git@github.com:CharlotteYW/ai-infra-lab.git`.
+Repository content and commit messages remain English; conversation may be Chinese or English.
 
 The university-resource integration remains a proposal: the suggested 272.5-hour target
 and the 260-hour alternative have not been applied or selected explicitly.
