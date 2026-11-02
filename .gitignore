@@ -1,0 +1,23 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+.env
+.env.*
+!.env.example
+# Keep downloaded weights and large generated outputs out of Git.
+models/
+artifacts/
+*.safetensors
+*.gguf
+*.pt
+*.pth
+*.ckpt
+# Small evidence files in assessments/ and benchmarks/ are intentionally not ignored.
