@@ -26,6 +26,21 @@ Updated: 2026-11-01 (America/Los_Angeles).
 | Phase 1 | Not started | No user sign-off |
 | Phases 2-6 | Not started | No user sign-offs |
 
+## Available hardware and compute
+
+Hardware inventory updated from the learner's report on 2026-11-01:
+
+| Resource | Availability and verification |
+| --- | --- |
+| Apple Silicon Mac, 64 GiB unified memory | Existing development environment; CPU/autograd and a small MPS operation verified during bootstrap |
+| Local NVIDIA RTX 3090 GPU | Learner reports access; host OS, GPU count, VRAM, driver, CUDA toolkit, framework compatibility, and access method have not been inspected |
+| Rented cloud GPUs | Learner is willing and able to rent GPU resources when useful; no provider, GPU configuration, budget, duration, or active instance has been selected |
+
+Prefer the existing local GPU for suitable CUDA experiments after verifying its environment.
+Use rental proposals for hardware needs not met locally, such as genuine multi-GPU work.
+Each paid experiment still requires explicit approval of its configuration and spending;
+availability is not authorization to provision. No CUDA/NCCL experiment has been executed.
+
 ## Open questions and verification gaps
 
 These are unassessed areas, not established weaknesses.
@@ -35,7 +50,7 @@ These are unassessed areas, not established weaknesses.
 | G-001 | Attention tensor shapes, scaling, and masking | Unassessed; Week 1 diagnostic and exercise |
 | G-002 | Autograd and inference/evaluation behavior | Unassessed; explanation and debugging question |
 | G-003 | Transformer data flow, prefill/decode, reusable state | Unassessed; trace and independent explanation |
-| G-004 | CUDA/NCCL and multi-GPU practical ability | Unverified; optional genuine hardware lab |
+| G-004 | CUDA/NCCL and multi-GPU practical ability | Unverified; local RTX 3090 access is reported, but environment and practical skills remain untested |
 
 No known learning blocker. CPU/autograd and a small MPS operation passed environment checks;
 the locked setup also passed in a fresh temporary environment. Both learner exercises are

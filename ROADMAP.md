@@ -48,6 +48,13 @@ The baseline is locally achievable with CPU and optional Apple Silicon accelerat
 Training uses genuine local multiprocess CPU execution; simulated parallelism and analytical
 cost models must be labeled. NVIDIA execution skills remain unverified without real hardware.
 
+The learner reports local RTX 3090 access and can rent cloud GPUs as needed; see the
+[hardware inventory](PROGRESS.md#available-hardware-and-compute) for verification status.
+After environment checks, use the local NVIDIA path for suitable CUDA/Triton, inference,
+and training experiments. Propose rented hardware only when it adds educational value or
+meets requirements unavailable locally. Existing phase budgets and sign-off criteria remain
+in force; hardware availability does not automatically add mandatory labs or certify skills.
+
 Optional CUDA/Triton work requires a supported NVIDIA GPU and matching Linux/driver/toolchain;
 tiny kernel examples need one device. An actual multi-GPU NCCL/parallel training experiment
 needs at least two supported GPUs, with memory sized to the chosen model. Multi-node network
@@ -71,3 +78,4 @@ platform specializations using observed interests and demonstrated work.
 | Date | Revision | Basis |
 | --- | --- | --- |
 | 2026-11-01 | Initial 26-week baseline and agent-independent continuity | User-approved setup plan; tensor familiarity is self-reported; optional NVIDIA hardware track |
+| 2026-11-01 | Record local RTX 3090 and cloud GPU rental availability | Learner-reported resources; environment unverified; no schedule expansion or paid provisioning |

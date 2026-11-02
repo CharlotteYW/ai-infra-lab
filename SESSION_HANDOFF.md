@@ -2,6 +2,12 @@
 
 Session: 2026-11-01 (America/Los_Angeles).
 
+Latest update: recorded learner-reported local NVIDIA RTX 3090 access and ability to rent
+cloud GPUs. The canonical inventory is in [PROGRESS.md](PROGRESS.md#available-hardware-and-compute).
+The GPU host, count, VRAM, OS, driver, CUDA toolkit, and access method remain unverified.
+Prefer suitable local NVIDIA experiments after environment checks; paid rental still needs
+an explicitly approved configuration and budget. No GPU experiment was run or provisioned.
+
 ## Current state
 
 - Phase 1 / P1.W1 planned; learning has not started. Latest learner sign-off: none.
@@ -13,15 +19,25 @@ Session: 2026-11-01 (America/Los_Angeles).
 
 ## Work completed and files
 
-The learner explicitly chose creation of the public repository and push. Created it,
+Earlier publication work: the learner explicitly chose creation of the public repository and push. Created it,
 configured `origin`, and pushed `main`. Updated `README.md` with the repository connection,
 `PROGRESS.md` with publication status, and this handoff. These documentation updates are
 included in a follow-up commit/push under the same publication authorization.
+
+Current documentation update: modified `AGENTS.md`, `ROADMAP.md`, `PROGRESS.md`, `README.md`,
+and this handoff to retain the new hardware information. Curriculum budgets, learner
+exercise implementations, assessment evidence, and sign-offs were not changed.
 
 The learner clarified a typo: conversation may be Chinese or English; repository content
 AND commit messages must remain English. `AGENTS.md` already contains that rule.
 
 ## Commands and verification
+
+Current update: documentation-only; `git diff --check` passed. An inline Python audit
+passed for unique section headings, 30 local Markdown links/anchors, hardware verification
+status, and preserved learning status. Tests and benchmarks were not rerun. No learner
+understanding was assessed; G-001 through G-004 remain open. The earlier publication
+commands below are historical context, not commands rerun for this update.
 
 - `gh repo create CharlotteYW/ai-infra-lab --public --source=. --remote=origin --push
   --description "An agent-independent AI infrastructure learning lab with curriculum, assessments, and hands-on systems projects"`:

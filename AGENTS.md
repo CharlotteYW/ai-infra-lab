@@ -143,6 +143,13 @@ requirements for optional GPU work. Never assume cloud access or provision paid 
 without explicit approval. Keep MPS inference on the host rather than assuming a Linux
 container on macOS can access MPS.
 
+Consult the hardware inventory in `PROGRESS.md`: the learner also reports a local NVIDIA
+RTX 3090 and access to rented cloud GPUs. Prefer suitable local NVIDIA experiments over
+rental after verifying the GPU host and software environment. Do not assume GPU count,
+memory capacity, remote access details, or multi-GPU capability from the model name alone.
+Rental availability is not spending authorization; agree on configuration, duration, and
+cost before provisioning. Hardware access does not establish demonstrated CUDA/NCCL skills.
+
 ## Git and external actions
 
 Preserve existing work. The approved bootstrap permits local Git initialization on `main`.

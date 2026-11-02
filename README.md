@@ -78,8 +78,10 @@ there. Keep project explanations and compact evidence beside the corresponding w
 | Distributed Training Lab | 4 | Local DDP, recovery, and communication/memory analysis |
 | AI Serving Platform | 5-6 | Routing, limits, reliability, observability, and integration |
 
-CPU and optional MPS experiments form the local baseline. Genuine CUDA/NCCL work needs
-separately arranged NVIDIA hardware; simulations never stand in for hardware evidence.
+CPU and optional MPS experiments form the portable baseline. The learner also reports a
+local NVIDIA RTX 3090 and can rent cloud GPUs for suitable experiments. See the
+[hardware inventory](PROGRESS.md#available-hardware-and-compute) for verification status
+and spending boundaries. Simulations never stand in for genuine hardware evidence.
 
 ## GitHub connection
 
